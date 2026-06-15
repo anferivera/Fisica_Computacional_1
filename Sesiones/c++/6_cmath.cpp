@@ -5,7 +5,7 @@ using namespace std;
 
 int main() 
 { 
-  // example compute the area of a circle with radius r
+  /* example compute the area of a circle with radius r */
   float r, area;
 
   cout << "Enter the radius of the circle: ";

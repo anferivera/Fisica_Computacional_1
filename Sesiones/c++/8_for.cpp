@@ -4,13 +4,13 @@
 using namespace std; 
 
 int main() 
-{ // loop for as a ilustration in C++
+{ // loop for as a ilustration... in C++
     for (int i = 0; i < 10; i++) 
-    { /* code */
-        cout << "i = " << i << endl; 
-    }
+     { /* code */
+           cout << "i = " << i << endl; 
+          }
 
-  int factorial = 1;
+  float factorial = 1;
   int n;
 
   // This program calculates the factorial of a given integer n using a for loop.
