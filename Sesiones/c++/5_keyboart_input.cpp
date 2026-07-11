@@ -4,7 +4,8 @@ using namespace std;
 
 int main() 
 { 
-  int x,y,z;
+  int x;
+  float y,z;
   cout << "Enter the first integer: ";
   cin >> x;
   cout << "Enter the second integer: ";
