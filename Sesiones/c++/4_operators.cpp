@@ -6,7 +6,7 @@ int main()
 int a = 10, b = 20;
 double c = 3.14;
 
-cout << " a = " << a << "\n b = " << b << "\n c = " << c << "\n";
+cout << "\n a = " << a << "\n b = " << b << "\n c = " << c << "\n";
 
 cout <<  "Result of a + b = " << a + b <<"\n";
 cout << "Result of a / b = " << a / b << "\n"; //error, the result is 0 because a and b are integers, we need to cast one of them to double
@@ -20,13 +20,13 @@ a--; //decrement a by 1
 cout << "After decrementing a: " << a << endl;
 
 
-//other for to identify variables
+//other form to identify variables
 int x,y,z;
+
 x = 1;
 y = 2;
 z = x + y; //assignment operator, assigns the value of x + y to z
 cout << "\nThe value of z is: " << z << endl;
-
 
   return 0;
 }

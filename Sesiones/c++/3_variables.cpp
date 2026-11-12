@@ -9,7 +9,7 @@ int main()
     char d = 'A'; // one byte, range: 0 to 255
     bool e = true; // one byte, values: true or false
 
-    cout << "Integer: " << a << endl; //endl is used to end the line and flush the output buffer
+    cout << "\nInteger: " << a << endl; //endl is used to end the line and flush the output buffer
     cout << "Float: " << b << endl;
     cout << "Double: " << c << endl;
     cout << "Character: " << d << endl;
