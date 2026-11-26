@@ -1,0 +1,163 @@
+{
+ "equipo": "ibm_marrakesh",
+ "qubits_equipo": 156,
+ "plan": "open",
+ "trabajo": "dbt8753eq3sc73evga6g",
+ "fecha_utc": "2026-11-16 04:23",
+ "disparos": 1000,
+ "qubits_fisicos": {
+  "Bell": [
+   55,
+   54
+  ],
+  "GHZ": [
+   53,
+   54,
+   55
+  ],
+  "GHZ + X(1)": [
+   53,
+   54,
+   55
+  ],
+  "CHSH a,b": [
+   55,
+   54
+  ],
+  "CHSH a,b'": [
+   55,
+   54
+  ],
+  "CHSH a',b": [
+   55,
+   54
+  ],
+  "CHSH a',b'": [
+   55,
+   54
+  ]
+ },
+ "circuitos_equipo": {
+  "Bell": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[2];\nrz(pi/2) q[54];\nsx q[54];\nrz(pi) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(pi/2) q[55];\ncz q[55],q[54];\nsx q[54];\nrz(pi/2) q[54];\nbarrier q[55],q[54];\nmeasure q[55] -> c[0];\nmeasure q[54] -> c[1];",
+  "GHZ": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[3];\nrz(pi/2) q[53];\nsx q[53];\nrz(pi/2) q[53];\nrz(pi/2) q[54];\nsx q[54];\nrz(pi) q[54];\ncz q[53],q[54];\nsx q[54];\nrz(pi/2) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(pi) q[55];\ncz q[54],q[55];\nsx q[55];\nrz(pi/2) q[55];\nbarrier q[53],q[54],q[55];\nmeasure q[53] -> c[0];\nmeasure q[54] -> c[1];\nmeasure q[55] -> c[2];",
+  "GHZ + X(1)": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[3];\nrz(pi/2) q[53];\nsx q[53];\nrz(pi/2) q[53];\nrz(pi/2) q[54];\nsx q[54];\nrz(pi) q[54];\ncz q[53],q[54];\nsx q[54];\nrz(pi/2) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(pi) q[55];\ncz q[54],q[55];\nx q[54];\nsx q[55];\nrz(pi/2) q[55];\nbarrier q[53],q[54],q[55];\nmeasure q[53] -> c[0];\nmeasure q[54] -> c[1];\nmeasure q[55] -> c[2];",
+  "CHSH a,b": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[2];\nrz(-pi/2) q[54];\nsx q[54];\nrz(-pi/2) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(-pi/2) q[55];\ncz q[55],q[54];\nsx q[54];\nrz(-pi/4) q[54];\nsx q[54];\nbarrier q[55],q[54];\nmeasure q[55] -> c[0];\nmeasure q[54] -> c[1];",
+  "CHSH a,b'": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[2];\nrz(-pi/2) q[54];\nsx q[54];\nrz(-pi/2) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(-pi/2) q[55];\ncz q[55],q[54];\nsx q[54];\nrz(-3*pi/4) q[54];\nsx q[54];\nbarrier q[55],q[54];\nmeasure q[55] -> c[0];\nmeasure q[54] -> c[1];",
+  "CHSH a',b": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[2];\nrz(pi/2) q[54];\nsx q[54];\nrz(-3*pi/2) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(-pi) q[55];\ncz q[55],q[54];\nsx q[54];\nrz(3*pi/4) q[54];\nsx q[54];\nsx q[55];\nrz(-pi/2) q[55];\nbarrier q[55],q[54];\nmeasure q[55] -> c[0];\nmeasure q[54] -> c[1];",
+  "CHSH a',b'": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[156];\ncreg c[2];\nrz(pi/2) q[54];\nsx q[54];\nrz(-3*pi/2) q[54];\nrz(pi/2) q[55];\nsx q[55];\nrz(pi) q[55];\ncz q[55],q[54];\nsx q[54];\nrz(pi/4) q[54];\nsx q[54];\nsx q[55];\nrz(-pi/2) q[55];\nbarrier q[55],q[54];\nmeasure q[55] -> c[0];\nmeasure q[54] -> c[1];"
+ },
+ "conteos_equipo": {
+  "Bell": {
+   "11": 451,
+   "01": 25,
+   "00": 497,
+   "10": 27
+  },
+  "GHZ": {
+   "000": 488,
+   "111": 449,
+   "010": 9,
+   "101": 17,
+   "110": 13,
+   "011": 14,
+   "001": 9,
+   "100": 1
+  },
+  "GHZ + X(1)": {
+   "101": 451,
+   "010": 490,
+   "001": 15,
+   "000": 12,
+   "111": 8,
+   "100": 13,
+   "011": 7,
+   "110": 4
+  },
+  "CHSH a,b": {
+   "00": 419,
+   "11": 392,
+   "10": 106,
+   "01": 83
+  },
+  "CHSH a,b'": {
+   "00": 452,
+   "11": 382,
+   "01": 79,
+   "10": 87
+  },
+  "CHSH a',b": {
+   "00": 419,
+   "11": 385,
+   "10": 93,
+   "01": 103
+  },
+  "CHSH a',b'": {
+   "01": 409,
+   "10": 426,
+   "11": 63,
+   "00": 102
+  }
+ },
+ "conteos_ruido": {
+  "Bell": {
+   "00": 509,
+   "11": 483,
+   "10": 2,
+   "01": 6
+  },
+  "GHZ": {
+   "000": 477,
+   "111": 507,
+   "110": 3,
+   "101": 1,
+   "001": 8,
+   "010": 2,
+   "100": 1,
+   "011": 1
+  },
+  "GHZ + X(1)": {
+   "010": 468,
+   "101": 500,
+   "011": 13,
+   "111": 4,
+   "001": 2,
+   "000": 5,
+   "100": 8
+  },
+  "CHSH a,b": {
+   "10": 81,
+   "11": 446,
+   "01": 71,
+   "00": 402
+  },
+  "CHSH a,b'": {
+   "01": 88,
+   "00": 388,
+   "11": 444,
+   "10": 80
+  },
+  "CHSH a',b": {
+   "00": 428,
+   "11": 432,
+   "10": 69,
+   "01": 71
+  },
+  "CHSH a',b'": {
+   "10": 400,
+   "01": 454,
+   "11": 70,
+   "00": 76
+  }
+ },
+ "uso": {
+  "creado_utc": "2026-11-16T04:16:20.503756Z",
+  "inicio_utc": "2026-11-16T04:21:31.267554Z",
+  "fin_utc": "2026-11-16T04:22:33.914341Z",
+  "cola_s": 310.8,
+  "en_ejecucion_s": 62.6,
+  "equipo_s": 4,
+  "ru": 0.059351,
+  "limite_s": 600,
+  "limite_ru": 10
+ }
+}
